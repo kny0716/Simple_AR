@@ -4,10 +4,10 @@ import cv2 as cv
 
 # The given video and calibration data
 video_file = 'chessboard_video.mp4'
-K = np.array([[1.82231727e+03,0.00000000e+00,1.00990612e+03],
- [0.00000000e+00,1.82569324e+03,5.25779668e+02],
- [0.00000000e+00, 0.00000000e+00 ,1.00000000e+00]])
-dist_coeff = np.array([ 0.22751944, -1.03073295, -0.00627838 , 0.00867254 , 0.94727656])
+K = np.array([[1.83852409e+03 ,0.00000000e+00 ,1.00614444e+03],
+ [0.00000000e+00 ,1.83928757e+03, 5.21005255e+02],
+ [0.00000000e+00, 0.00000000e+00, 1.00000000e+00]])
+dist_coeff = np.array([ 0.20100666 ,-1.00984075 ,-0.00586841,  0.00798829,  1.71240783])
 board_pattern = (10, 7)
 board_cellsize = 0.025
 board_criteria = cv.CALIB_CB_ADAPTIVE_THRESH + cv.CALIB_CB_NORMALIZE_IMAGE + cv.CALIB_CB_FAST_CHECK
